@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <title>FCC - Quote Machine Project "WIP".</title>
+</head>
+
+<body>
+  <div class="container" id="machine-body">
+    <div class="well" id="screen-border">
+      <div id="left-screw"><img src="img/screwhead.png" class="screw"></div>
+      <div id="right-screw"><img src="img/screwhead.png" class="screw"></div>
+      <h1 class="text-center" id="machine-name">Namax0r QM - 500</h1>
+      <div class="well shadow" id="screen">
+        <div class="row">
+          <div class="col-md-2">
+            <i class="fa fa-signal" id="signal"></i><i class="fa fa-battery-three-quarters"></i><span id="clock">6:08 PM</span>
+          </div>
+          <div class="col-md-8">
+            <h2 class="text-center" id="screen-header">Namax0r Inc. Quote Machine Terminal</h2>
+          </div>
+        </div>
+        <!-- end of row -->
+        <hr id="top-line">
+        <blockquote id="quote-area">
+          <div><i class="fa fa-quote-left"></i><span id="quote">
+Place holder </span><i class="fa fa-quote-right"></i>
+          </div>
+          <div class="text-right" id="author">- Place holder</div>
+        </blockquote>
+        <p>Software Version: v0.5 - Build: 110315</p>
+      </div>
+      <!-- end of screen -->
+      <button class="btn button" id="quote-btn"><i class="fa fa-refresh"></i> Get Quote</button>
+      <a class="twitter-share-button" id="tweet-anchor" href="#" target="_blank">
+        <button class="btn button" id="tweet-btn"><i class="fa fa-twitter"></i>
+          </i>
+          Share</button>
+      </a>
+      <div id="left-screw"><img src="img/screwhead.png" class="screw"></div>
+      <div id="right-screw"><img src="img/screwhead.png" class="screw"></div>
+      <button class="btn button" id="pwr-btn"><i class="fa fa-power-off"></i></button>
+      <i class="fa fa-circle" id="standby"></i>
+    </div>
+    <!-- end of screen-border -->
+    <p class="text-right">Made by <a href="http://www.freecodecamp.com/namax0r" target="_blank"> Namax0r</a>
+  </div>
+  <!-- end of machine-body -->
+</body>
+
+</html>
