@@ -48,25 +48,48 @@ hr {
   padding: 0;
   margin-top: 5px;
 }
+#bottom-row {
+  margin-top: 10px;
+}
 
 /* End of and elemenets  screen styles */
 
-
 /* Button styles */
 
+button:focus {
+  outline: none !important;
+  /* Removes dotted outline when button is clicked */
+}
 .button {
-  color: black;
+  color: #e0e0e0;
+  position: relative;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.btn:active, .btn:focus {
+  color: #FFF !important;
+}
+#pwr-btn:hover, #quote-btn:hover {
+  background-color: #ba3a03!important;
+  color: #FFF !important
+}
+#tweet-btn:hover {
+  background-color: #026691!important;
+  color: #FFF !important
 }
 #pwr-btn {
+  float: right;
   background-color: #9E390E;
   /*border:2px solid #F6722D;*/
   -moz-box-shadow: 0 4px #6B2009;
   -webkit-box-shadow: 0 4px #6B2009;
   box-shadow: 0 4px #6B2009;
   margin-right: 10px;
-  float: right;
 }
 #pwr-btn:active {
+  position: relative;
+  top: 5px;
   background-color: #9E390E;
   /*border:2px solid #F6722D;*/
   -moz-box-shadow: 0 0px #6B2009;
@@ -82,6 +105,9 @@ hr {
   margin-left: 10px;
 }
 #quote-btn:active {
+  color: white;
+  position: relative;
+  top: 5px;
   background-color: #9E390E;
   /*border:2px solid #F6722D;*/
   -moz-box-shadow: 0 0px #6B2009;
@@ -96,6 +122,8 @@ hr {
   box-shadow: 0 4px #092E44;
 }
 #tweet-btn:active {
+  position: relative;
+  top: 5px;
   background-color: #0B3D67;
   /*border:2px solid #2861A1;*/
   -moz-box-shadow: 0 0px #092E44;
@@ -104,7 +132,6 @@ hr {
 }
 
 /* End of button styles */
-
 
 /* Quote styles */
 
@@ -122,7 +149,6 @@ blockquote {
 
 /* End of quote styles */
 
-
 /* Icons styles */
 
 #signal {
@@ -135,7 +161,6 @@ blockquote {
   color: #5b111b;
 }
 .standby-off {
-  float: right;
   margin-right: 10px;
   margin-top: 10px;
   color: #f40222 !important;
@@ -151,7 +176,6 @@ blockquote {
 }
 
 /* End of icons styles */
-
 
 /* Screen off styles */
 
